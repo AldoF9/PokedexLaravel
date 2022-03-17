@@ -42,7 +42,7 @@
                                 mostrar foto, nombre y altura del mismo.
 
                                 La consulta deberá ser cada 30 segundos o presionando un botón, el botón deberá decir
-                                "Mostrar Pokemón", al presionarlo, deberá recupere  un pokemón al azar
+                                "Mostrar Pokemón", al presionarlo, deberá recupere un pokemón al azar
                                 sin importar si han pasado o no los 30 segundos</p>
                         </div>
 
@@ -54,13 +54,20 @@
                             <div class="row mb-2 justify-content-center navCap">
                                 <div class="btn btn-danger m-auto col-lg-2 col-md-2 col-sm-2 col-xs-2" id="temporizador">
                                 </div>
-                                <div class="btn btn-danger m-auto col-lg-7 col-md-7 col-sm-7 col-xs-7" id="nombrePokemon">
+                                <div class="btn btn-danger m-auto col-lg-7 col-md-7 col-sm-7 col-xs-7"
+                                    id="nombrePokemon">
                                     Pokemon
                                     Capturado:
                                 </div>
                                 <div class="partCapturar">
 
                                     <button id="btnCapturar" class="btn btn-warning"> Mostrar Pokemon </button>
+
+                                </div>
+
+                                <div class="mostrarPokemon">
+                                    <a href="/pokemon" class="btn btn-primary">
+                                        Mostrar pokemon guardados </a>
 
                                 </div>
 
@@ -83,17 +90,16 @@
 
         <!--JS-->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-            crossorigin="anonymous"></script>
+                integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+        </script>
 
 
-        <script type="text/javascript" src="{{ asset('js/capturados.js') }}" ></script>
+        <script type="text/javascript" src="{{ asset('js/capturados.js') }}"></script>
 
 
 </body>
 
 </html>
-
